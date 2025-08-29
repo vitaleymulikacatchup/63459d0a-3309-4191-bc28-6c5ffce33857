@@ -9,7 +9,6 @@ import CentralFAQ from '@/components/sections/layouts/faq/CentralFAQ';
 import FooterBase from '@/components/footer/FooterBase';
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import { useState } from 'react';
-import { images } from '../../public/images';
 
 export default function Home() {
   const [navLinks] = useState([
@@ -26,7 +25,7 @@ export default function Home() {
       <BillboardHero title="Welcome to GiggleCoin Playground" subtitle="Join the fun of crypto trading"/>
       <SplitAbout description="GiggleCoin is a playful digital currency designed for fun and engagement in the community."/>
       <HowToBuy3D title="How to Buy GiggleCoin" steps={[{ title: 'Step 1', description: 'Create a wallet', image: '/images/placeholder1.avif', position: 'left', isCenter: false }, { title: 'Step 2', description: 'Purchase GiggleCoin', image: '/images/placeholder2.avif', position: 'center', isCenter: true }, { title: 'Step 3', description: 'Join the community', image: '/images/placeholder3.avif', position: 'right', isCenter: false }]}/>
-      <ExpandingGridTokenomics title="Tokenomics" description="Explore the GiggleCoin economy and its playful utility." cardItems={[{ id: 1, title: 'Supply', description: 'Total supply of GiggleCoin', value: '1 Billion' }, { id: 2, title: 'Liquidity', description: 'Usable liquidity for all transactions', value: '500 Million' }, { id: 3, title: 'Community Fund', description: 'Funds set aside for community projects', value: '100 Million' }]}/>
+      <ExpandingGridTokenomics title="Tokenomics" description="Explore the GiggleCoin economy and its playful utility." cardItems={[{ id: 1, title: 'Supply', description: 'Total supply of GiggleCoin' }, { id: 2, title: 'Liquidity', description: 'Usable liquidity for all transactions' }, { id: 3, title: 'Community Fund', description: 'Funds set aside for community projects' }]}/>
       <CentralFAQ items={[{ title: 'What is GiggleCoin?', content: 'GiggleCoin is a fun cryptocurrency to engage users in the digital space.' }, { title: 'How to buy GiggleCoin?', content: 'You can buy GiggleCoin through various exchanges.' }, { title: 'Where can I spend GiggleCoin?', content: 'You can spend GiggleCoin at partnered merchants and events.' }, { title: 'Is GiggleCoin secure?', content: 'Yes, it employs strong security measures for all transactions.' }]}/>
       <FooterBase logoSrc="/images/logo.svg" logoAlt="GiggleCoin Logo" columns={[{ title: 'Links', items: [{ label: 'Home', onClick: () => { } }, { label: 'About', onClick: () => { } }, { label: 'Contact', onClick: () => { } }] }, { title: 'Social', items: [{ label: 'Twitter', onClick: () => { } }, { label: 'Discord', onClick: () => { } }, { label: 'GitHub', onClick: () => { } }] }]} copyrightText="© 2023 GiggleCoin. All rights reserved." onPrivacyClick={() => alert('Privacy Policy')} />
     </SiteThemeProvider>
